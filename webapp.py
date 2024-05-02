@@ -30,5 +30,13 @@ def render_page4():
 def render_page5():
     return render_template('page5.html')
     
+@app.route("/p6")
+def render_page6():
+    return render_template('checkPage.html')
+    
+@app.route("/f")
+def render_pageFinal():
+    return render_template('FinalPage.html')
+    
 if __name__=="__main__":
     app.run(debug=True)
