@@ -1,8 +1,7 @@
-from flask import Flask, request, url_for, render_template, request
+from flask import Flask, request, url_for, render_template, redirect, session
 from markupsafe import Markup
 
 import os
-import json
 
 app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  Otherwise, it is the name of the file (ex. webapp)
 
@@ -14,8 +13,9 @@ def render_main():
 def render_page1():
     return render_template('page1.html')
     
-@app.route("/p2")
+@app.route("/p2",methods=['GET','POST'])
 def render_page2():
+    session["A1"]=request.form['temp']
     return render_template('page2.html')
     
 @app.route("/p3")
