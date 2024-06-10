@@ -4,7 +4,7 @@ from markupsafe import Markup
 import os
 
 app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  Otherwise, it is the name of the file (ex. webapp)
-app.config['SECRET_KEY'] = 'hard to guess string'
+app.config['SECRET_KEY'] = os.environ["SECRET_KEY"]
 
 @app.route("/")
 def render_main():
