@@ -7,18 +7,22 @@
 {% block content %}
 		<h1>Question 4</h1>
 		<p>25/5 =</p>
+		
+	<form action = "/p5" method = "POST">
+	
 		<div class="form-check">
-		  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>1
+		  <input type="radio" class="form-check-input" id="radio1" name="temp" value="1" checked>1
 		  <label class="form-check-label" for="radio1"></label>
 		</div>
 		<div class="form-check">
-		  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">42
+		  <input type="radio" class="form-check-input" id="radio2" name="temp" value="42">42
 		  <label class="form-check-label" for="radio2"></label>
 		</div>
 		<div class="form-check">
-		  <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">5
+		  <input type="radio" class="form-check-input" id="radio3" name="temp" value="5">5
 		  <label class="form-check-label"></label>
 		</div>
-		<a href="/p3" class="btn btn-primary">Previous page</a>
-		<a href="/p5" class="btn btn-primary">Next page</a>
+		
+		<button type="submit" class="btn btn-primary">Next Question</button>
+	</form>
 {% endblock %}

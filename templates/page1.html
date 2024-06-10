@@ -8,20 +8,21 @@
 		<h1>Question 1</h1>
 		<p>3-1 =</p>
 
-	<form action = {{ url_for("render_page1") }} method = "POST">
+	<form action = "/p2" method = "POST">
+	
 		<div class="form-check">
-		  <input type="radio" class="form-check-input" id="radio1" name="temp" value="option1" checked>
+		  <input type="radio" class="form-check-input" id="radio1" name="temp" value="2" checked>
 		  <label class="form-check-label" for="radio1">2</label>
 		</div>
 		<div class="form-check">
-		  <input type="radio" class="form-check-input" id="radio2" name="temp" value="option2">
+		  <input type="radio" class="form-check-input" id="radio2" name="temp" value="300">
 		  <label class="form-check-label" for="radio2">300</label>
 		</div>
 		<div class="form-check">
-		  <input type="radio" class="form-check-input" id="radio3" name="temp" value="option3">
+		  <input type="radio" class="form-check-input" id="radio3" name="temp" value="-20">
 		  <label class="form-check-label">-20</label>
 		</div>
-		<a href="/" class="btn btn-primary">Previous page</a>
-		<a href="/p2" class="btn btn-primary">Next page</a>
+		
+		<button type="submit" class="btn btn-primary">Next Question</button>
 	</form>
 {% endblock %}

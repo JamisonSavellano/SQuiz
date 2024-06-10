@@ -7,18 +7,22 @@
 {% block content %}
 		<h1>Question 5</h1>
 		<p>16^2 =</p>
+		
+	<form action = "/f" method = "POST">
+	
 		<div class="form-check">
-		  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>300
+		  <input type="radio" class="form-check-input" id="radio1" name="temp" value="300" checked>300
 		  <label class="form-check-label" for="radio1"></label>
 		</div>
 		<div class="form-check">
-		  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">72
+		  <input type="radio" class="form-check-input" id="radio2" name="temp" value="72">72
 		  <label class="form-check-label" for="radio2"></label>
 		</div>
 		<div class="form-check">
-		  <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">256
+		  <input type="radio" class="form-check-input" id="radio3" name="temp" value="256">256
 		  <label class="form-check-label"></label>
 		</div>
-		<a href="/p4" class="btn btn-primary">Previous page</a>
-		<a href="/p6" class="btn btn-primary">Next page</a>
+		
+		<button type="submit" class="btn btn-primary">Next Question</button>
+	</form>
 {% endblock %}

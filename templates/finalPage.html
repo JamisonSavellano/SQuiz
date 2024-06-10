@@ -6,9 +6,15 @@
 
 {% block content %}
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+	
 	<h1 class = "center">Congrats on finishing the quiz!!!</h1>
-	<h2 class = "center">You got correct</h2>
+	<h2 class = "center">You got {{ numCorrect }} correct</h2>
+	<h3 class = "center">Question 1: {{ qCorrect["Q1"] }}</h3>
+	<h3 class = "center">Question 2: {{ qCorrect["Q2"] }}</h3>
+	<h3 class = "center">Question 3: {{ qCorrect["Q3"] }}</h3>
+	<h3 class = "center">Question 4: {{ qCorrect["Q4"] }}</h3>
+	<h3 class = "center">Question 5: {{ qCorrect["Q5"] }}</h3>
+	
 	<div class = "w3-panel center">
 		<a href="/p1" class="btn btn-primary">Restart Test</a>
 	</div
