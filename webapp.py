@@ -13,12 +13,10 @@ def render_main():
 @app.route("/p1",methods=['GET','POST'])
 def render_page1():
     session.clear()
-    print(session)
     return render_template('page1.html')
     
 @app.route("/p2",methods=['GET','POST'])
 def render_page2():
-    print(session)
     if "A1" in session:
         return render_template('page2.html')
     else:
@@ -28,7 +26,6 @@ def render_page2():
     
 @app.route("/p3",methods=['GET','POST'])
 def render_page3():
-    print(session)
     if "A2" in session:
         return render_template('page3.html')
     else:
@@ -38,7 +35,6 @@ def render_page3():
     
 @app.route("/p4",methods=['GET','POST'])
 def render_page4():
-    print(session)
     if "A3" in session:
         return render_template('page4.html')
     else:
@@ -48,7 +44,6 @@ def render_page4():
     
 @app.route("/p5",methods=['GET','POST'])
 def render_page5():
-    print(session)
     if "A4" in session:
         return render_template('page5.html')
     else:
