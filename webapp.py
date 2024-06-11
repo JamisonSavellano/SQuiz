@@ -56,7 +56,7 @@ def render_pageFinal():
     x = 0
     y = {}
     if "A5" in session:
-        return render_template('FinalPage.html', numCorrect = x)
+        return render_template('finalPage.html', numCorrect = x)
     else:
         if request.method == 'POST':
             session["A5"] = request.form['temp']
@@ -85,7 +85,7 @@ def render_pageFinal():
                y["Q5"] = "correct"
             else:
                y["Q5"] = "incorrect"
-            return render_template('FinalPage.html', numCorrect = x, qCorrect = y)
+            return render_template('finalPage.html', numCorrect = x, qCorrect = y)
     
 if __name__=="__main__":
     app.run(debug=True)
